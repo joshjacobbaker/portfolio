@@ -1,7 +1,58 @@
 {
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
-  ]
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+
+  // TailwindCSS Settings
+  "files.associations": {
+    "*.html": "html",
+    "*.js": "javascript",
+    "*.ts": "typescript",
+    "*.jsx": "javascriptreact",
+    "*.tsx": "typescriptreact",
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    "tw=\"([^\"]*)",
+    "tw=\\'([^\\']*)",
+    "tw\\.\\w+`([^`]*)",
+    "tw\\.\\w+=\"([^\"]*)",
+    "tw\\.\\w+=\\'([^\\']*)"
+  ],
+
+  // Typescript Settings
+  "typescript.suggest.autoImports": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Prettier Settings
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+
+  // ESLint Settings
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Terminal Settings
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.scrollback": 10000
 }
