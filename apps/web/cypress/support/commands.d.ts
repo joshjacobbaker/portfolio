@@ -2,7 +2,7 @@
 
 declare namespace Cypress {
   interface Chainable {
-    visitHomepage(): Chainable<void>
-    checkAccessibility(): Chainable<void>
+    visitHomepage(): Chainable<void>;
+    checkAccessibility(): Chainable<void>;
   }
 }
